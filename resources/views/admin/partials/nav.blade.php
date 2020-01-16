@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview menu-open">
-                    <a href="#" class="nav-link {{ request()->is('admin/posts/*') ? 'active' : '' }}">
+                    <a href="#" class="nav-link {{ request()->is('admin/posts*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Post

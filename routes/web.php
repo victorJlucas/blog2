@@ -13,7 +13,6 @@
 
 Route::get('/', 'PagesController@home');
 
-
 Route::get('posts', 'PagesController@home');
 
 Route::group([
@@ -24,11 +23,9 @@ Route::group([
     Route::get('/', 'AdminController@index')->name('dashboard');
     Route::get('posts', 'PostsController@index')->name('admin.posts.index');
     Route::get('posts/create', 'PostsController@create')->name('admin.posts.create');
+
 // Resto de rutas administrativas
 });
-
-
-
 
 //Rutas de login
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
